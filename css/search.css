@@ -1,0 +1,73 @@
+#searchDiv{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+    background: white;
+    display: none;
+}
+#searchBox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background:	#4169E1;
+    padding-right: 20px;
+}
+#searchBox #returnMap{
+    float: left;
+    width: 40px;
+    height: 50px;
+    color: white;
+    line-height: 50px;
+    font-size: 35px;
+    padding-left: 10px;
+}
+#searchBox #inputDiv{
+position: absolute;
+left: 40px;
+top: 5px;
+bottom: 5px;
+right: 10px;
+}
+#searchBox #inputDiv input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+#typeDiv{
+    width: 100%;
+    text-align: center;
+    height: 210px;
+    background-color: #fefefe;
+    overflow: hidden;
+}
+
+#typeDiv ul{
+    list-style: none;
+}
+
+.a-clicked{
+	background: rgba(255,255,255,0.8);
+}
+
+#poi-list{
+	top:260px;
+}
+
+#pois li div{
+	height: 30px;
+}
+
+#pois li div img{
+	position: absolute;
+	bottom: 5px;;
+}
+
+#pois li font{
+	position: absolute;
+	bottom: 2px;
+	left: 70px;
+}

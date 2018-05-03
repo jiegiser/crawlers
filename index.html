@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>甘肃农业大学</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=WtSZiDjE0KEgfSMsxGY7pxng"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" href="css/search.css">
+		<style type="text/css">
+			<!--去除百度地图logo-->.BMap_cpyCtrl {
+				display: none;
+			}
+			
+			.anchorBL {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header" ><span data-index="0" onclick="openSearchDiv()" id="header-text">请输入关键字</span><span id="reset" class="fa fa-trash-o"></span><span class="shuxian"></span></div>
+		<!--地图容器-->
+		<div id="map"></div>
+		<!--打开菜单按钮-->
+		<div id="openMenu" onclick="openMenu()"><span class="fa fa-caret-right"></span></div>
+		<!-- 左边菜单 -->
+		<div id="left-menu">
+			<div id="basemap" data-index="1" class="menu"><span class="fa fa-globe"></span><br><span class="menu-text">底图</span></div>
+			<div id="school" class="menu"><span class="fa fa-graduation-cap"></span><br><span class="menu-text">学院</span></div>
+			<div id="canteen" class="menu"><span class="fa fa-cutlery"></span><br><span class="menu-text">食堂</span></div>
+			<div id="supermarket" class="menu"><span class="fa fa-shopping-cart"></span><br><span class="menu-text">超市</span></div>
+			<div id="sport" class="menu"><span class="fa fa-futbol-o"></span><br><span class="menu-text">运动</span></div>
+			<div id="close" onclick="closeMenu()"><span class="fa fa-angle-double-left"></span></div>
+		</div>
+		<!--右下角定位按钮-->
+		<div id="zoom"><span class="fa fa-map-marker"></span></div>
+		<!--左下角按钮-->
+		<div id="jiucuo" class="details-btn"><span class="fa fa-times-circle"></span><span class="details-btn-text">纠错</span></div>
+		<div id="xinzeng" class="details-btn"><span class="fa fa-plus-circle"></span><span class="details-btn-text">新增</span></div>
+		<div id="shezhi" class="details-btn"><span class="fa fa-cog"></span><span class="details-btn-text">设置</span></div>
+		<div id="wode" class="details-btn"><span class="fa fa-user"></span><span class="details-btn-text">我的</span></div>
+		<div id="more-btn" onclick="openAndCloseMoreBtn()"><span class="fa fa-th-large"></span></div>
+		<!--搜索页面-->
+		<div id="searchDiv">
+			<div id="searchBox">
+				<div id="returnMap" onclick="returnMap()"><span class="fa fa-angle-left"></span></div>
+				<div id="inputDiv"><input id="search-input" type="text" placeholder="请输入关键字"></div>
+			</div>
+			<div id="typeDiv">
+				<ul id="choiceTyoe" class="mui-table-view mui-grid-view mui-grid-9">
+					<li id="xueyuan" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4 ">
+						<a  href="#" class="a-clicked"><img src="fonts/xueyuan.svg" alt="" />
+							<div class="mui-media-body">学院</div>
+						</a>
+					</li>
+					<li id="jingdian" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+						<a href="#"><img src="fonts/jingdian.svg" />
+							<div class="mui-media-body div-clicked">景点</div>
+						</a>
+					</li>
+					<li id="shangdian" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+						<a  href="#"><img src="fonts/shangdian.svg" />
+							<div class="mui-media-body">商店</div>
+						</a>
+					</li>
+					<li id="shitang" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+						<a href="#"><img src="fonts/shitang.svg" />
+							<div class="mui-media-body">食堂</div>
+						</a>
+					</li>
+					<li id="kuaidi" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+						<a  href="#"><img src="fonts/kuaidi.svg" />
+							<div class="mui-media-body">快递</div>
+						</a>
+					</li>
+					<li id="yundong" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+						<a href="#"><img src="fonts/yundong.svg" />
+							<div class="mui-media-body">运动</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="poi-list" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul id="pois" class="mui-table-view"></ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script src="js/search.js"></script>
+
+</html>

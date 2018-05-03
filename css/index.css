@@ -1,0 +1,191 @@
+html,body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#map{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#header{
+	position: absolute;
+	z-index: 5555;
+	right: 15px;
+	left: 15px;
+	top:10px;
+	height: 40px;
+	background: white;
+	box-shadow: 0px 2px 5px #9b9b9b;
+	border-radius: 10px;
+	line-height: 40px;
+}
+
+#header .shuxian{
+	width: 1px;
+    height: 30px;
+    background-color: #9b9b9b;
+    position: absolute;
+    right: 40px;
+    top: 5px;
+}
+#header .fa{
+	position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 30px;
+    color: #2e8b57;
+}
+#header #header-text{
+	position: absolute;
+	top:0;
+	left: 5px;
+	right: 50px;
+	bottom: 0;
+	font-size: 15px;
+	color: #9b9b9b;
+}
+
+
+#openMenu{
+	position: absolute;
+	left: 0px;
+	top:70px;
+	width: 45px;
+	height: 45px;
+	margin-top: 10px;
+	line-height: 45px;
+	font-size: 40px;
+	color: #ae323b;
+	display: none;
+}
+
+#left-menu{
+	position: absolute;
+	left: 15px;
+	top:50px;
+
+}
+.menu{
+
+	width: 45px;
+	height: 45px;
+	margin-top: 10px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 3px 6px #9b9b9b;
+	text-align: center;
+	line-height: 15px;
+
+}
+.menu .fa{
+	font-size: 25px;
+}
+.menu .menu-text{
+	font-size: 8px;
+	color: #696969;
+}
+#basemap .fa{
+	color: #2E8B57;
+}
+#school .fa{
+	color: #ae323b;
+}
+#canteen .fa{
+	color: #960;
+}
+#supermarket .fa{
+	color: #b3bc20;
+}
+#sport .fa{
+	color: #f30;
+}
+
+#close{
+	width: 45px;
+	height: 45px;
+	margin-top: 10px;
+	background: white;
+	border-radius: 45px;
+	box-shadow: 0px 3px 6px #9b9b9b;
+	text-align: center;
+	line-height: 45px;
+	font-size: 25px;
+}
+
+#zoom{
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	width: 45px;
+	height: 45px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 3px 6px #9b9b9b;
+	text-align: center;
+	line-height: 60px;
+}
+#zoom .fa{
+	color: #696969;
+	font-size: 28px;
+}
+
+#more-btn{
+	position: absolute;
+	z-index: 999;
+	left: 15px;
+	bottom: 15px;
+	width: 45px;
+	height: 45px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 3px 6px #9b9b9b;
+	text-align: center;
+	line-height: 60px;
+}
+#more-btn .fa{
+	color: #007bcc;
+	font-size: 28px;
+}
+
+.details-btn{
+	width: 45px;
+    height: 45px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
+    opacity: 0;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px #9b9b9b;
+    text-align: center;
+    line-height: 10px;
+}
+.details-btn-text{
+	font-size: 10px;
+	color: #9b9b9b;
+}
+ #jiucuo .fa{
+ 	width: 45px;
+ 	font-size: 25px;
+ 	color: #f93;
+ }
+ #xinzeng .fa{
+ 	width: 45px;
+ 	font-size: 25px;
+ 	color: #bc1339;
+ }
+
+ #shezhi .fa{
+ 	width: 45px;
+ 	font-size: 25px;
+ 	color: #696969;
+ }
+ #wode .fa{
+ 	width: 45px;
+ 	font-size: 25px;
+ 	color: #007bcc;
+ }
