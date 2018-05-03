@@ -4,7 +4,7 @@ var map = new BMap.Map("map",{
 });
 
 // 初始化地图,设置中心点坐标和地图级别
-map.centerAndZoom(new BMap.Point(103.69675443975905,36.092285190253676), 16);
+map.centerAndZoom(new BMap.Point(103.706569,36.095906), 16);
 
 // 底图切换
 $("#basemap").click(function(){
